@@ -1,0 +1,16 @@
+Algoritmo algoritmo1
+	Escribir "Ingrese un numero";
+	Leer num;
+	Dimension numeroAleatorio[num];
+	Para i=1 Hasta num Con Paso 1 Hacer
+		numeroAleatorio[i] = azar(100)+1;
+	Fin Para
+	Para i=1 Hasta num Con Paso 1 Hacer
+		resto=numeroAleatorio[i] MOD 2;
+		Si  resto==0 Entonces
+			Escribir numeroAleatorio[i]," es un numero par";
+		SiNo
+			Escribir numeroAleatorio[i]," es un numero impar";
+		Fin Si
+	FinPara
+FinAlgoritmo
